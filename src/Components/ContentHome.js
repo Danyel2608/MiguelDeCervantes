@@ -194,6 +194,15 @@ function ContentHome() {
                             </div></li>
                         </ul>
                     </div>
+                    <div className="ensaladas">
+                        <div className="ensalada-precio">
+                            <h4 className="title">Ensaladas</h4>
+                            <h4>5,00€</h4>
+                        </div>
+                        <ul><div><li>
+                            <p>Lechuga,tomate,atún,huevo cocido,maíz,cebolla y aceitunas.</p>
+                        </li></div></ul>
+                    </div>
                     <div className="platos-combinados">
                         <div className="platos-combinados-precio">
                             <h4 className='title'>Platos combinados</h4>

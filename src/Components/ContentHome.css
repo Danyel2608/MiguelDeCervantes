@@ -39,7 +39,8 @@
 .bebidas-calientes,
 .bebidas-frias,
 .empanadas,
-.quesadillas {
+.quesadillas,
+.ensaladas {
   text-align: start;
   margin-bottom: 2em;
 }
@@ -54,7 +55,8 @@
 .menu-dia-precio,
 .plato-dia,
 .tostadas-precio,
-.pizzetas-precio {
+.pizzetas-precio,
+.ensalada-precio {
   display: flex;
   justify-content: space-between;
 }
@@ -85,7 +87,8 @@
 .bebidas-frias li,
 .empanadas li,
 .promociones li,
-.quesadillas li {
+.quesadillas li,
+.ensaladas li {
   list-style: decimal;
 }
 .platos-combinados li {
@@ -132,6 +135,7 @@
 .title {
   text-decoration: underline #4b261a 3px;
   text-underline-offset: 0.5em;
+  text-transform: uppercase;
 }
 
 @media only screen and (min-width: 640px) {

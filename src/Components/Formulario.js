@@ -9,7 +9,7 @@ function Formulario() {
             </div>
             <div className='rigth-form'>
                 <h3>¿Necsitas alguna información?</h3>
-                <p>Escríbenos la consulta y nosotros te responderemos encantados</p>
+                <p>"¿Tienes alguna alergia, preferencia alimentaria, o hay algún producto específico que te gustaría que incluyéramos o elimináramos de nuestra oferta? Por favor, proporciona los detalles a continuación.</p>
                 <form action="https://formsubmit.co/cafeteriamiguelcervantes@gmail.com" method="POST">
                     <input type="text" id="name" placeholder='Nombre' required="true" name='Nombre' />
                     <input type="text" id="last-name" placeholder='Apellidos' required="true" name='Apellidos' />
