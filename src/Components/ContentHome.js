@@ -98,6 +98,9 @@ function ContentHome() {
                             <li><div>
                                 <p>Tostada con jamón york y queso</p>
                             </div></li>
+                            <li><div>
+                                <p>Tostada con paté</p>
+                            </div></li>
                         </ul>
                     </div>
                     <div className="bollería">
@@ -162,14 +165,14 @@ function ContentHome() {
                         </div>
                         <ul>
                             <li><div>
-                                <p><strong>Hamburguesa mixta</strong>con tomate,
+                                <p><strong>Hamburguesa mixta</strong>  con tomate,
                                     lechuga, cebolla, bacon, queso, ketchup
                                     y mayonesa acompañada de patatas
                                     fritas o ensalada.
                                 </p>
                             </div></li>
                             <li><div>
-                                <p><strong>Hamburguesa de pollo</strong>con lechuga,
+                                <p><strong>Hamburguesa de pollo</strong>  con lechuga,
                                     tomate, cebolla, queso, ketchup y
                                     mayonesa acompañada de patatas
                                     fritas o ensalada.
@@ -292,7 +295,7 @@ function ContentHome() {
                             </li>
                             <li>
                                 <div>
-                                    <p>Refresco + picho de tortilla</p>
+                                    <p>Refresco + pincho de tortilla</p>
                                     <p><strong>2,20€</strong></p>
                                 </div>
                             </li>
@@ -303,17 +306,17 @@ function ContentHome() {
                             <h4 className='title'>Menú del día</h4>
                             <h4>8€</h4>
                         </div>
-                            <p>Incluye pan,una bebida,postre o café</p></div>
+                            <p>Incluye pan,una botella de agua,postre o café</p></div>
                         <div className="plato-dia">
                             <div>
                                 <h4 className='title'>Plato del día</h4>
                                 <h4>5€</h4>
                             </div>
-                            <p>Incluye pan,una bebida,postre o café</p>
+                            <p>Incluye pan,una botella de agua,postre o café</p>
                         </div>
                     </div>
                     <div className="info-menu-diario">
-                        <p>*EL MENÚ Y PALTO DEL DÍA HAY QUE RESERVARLO CON 24H DE ANTELACIÓN</p>
+                        <p>*EL MENÚ Y PLATO DEL DÍA HAY QUE RESERVARLO CON 24H DE ANTELACIÓN</p>
                     </div>
                     <div className="racion">
                         <div className="racion-para-llevar">
@@ -325,7 +328,7 @@ function ContentHome() {
                     </div>
                     <div className="promo">
                         <h3>¡PROMO DESAYUNOS!</h3>
-                        <h3>COMBINA TU CAFÉ CON TOSTADA O BOLLERIA POR 2,20€</h3>
+                        <h3>COMBINA TU CAFÉ CON TOSTADA O BOLLERÍA POR 2,20€</h3>
                     </div>
                 </div>
             </div>

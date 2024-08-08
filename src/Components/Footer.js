@@ -8,7 +8,7 @@ function Footer() {
                 <div className="contacts">
                     <div className="left-contact">
                         <i class="fa-solid fa-phone"></i>
-                        <h3>+34 612423123</h3>
+                        <h3>+34 600072260</h3>
                     </div>
                     <div className="right-contact">
                         <i class="fa-solid fa-envelope"></i>
