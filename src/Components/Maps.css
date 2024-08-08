@@ -1,0 +1,30 @@
+.maps{
+    margin: 3.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #804000;
+    border-radius: 2.5rem;
+    padding: 2em;
+}
+.maps h2{
+    text-transform: uppercase;
+    color: #fff;
+}
+.maps iframe{
+    border-radius: 2.5rem;
+    margin: 1em 0;
+    width: 100%;
+    height: 300px;
+}
+@media only screen and (min-width: 640px) {
+    .maps iframe{
+        height: 500px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .maps iframe{
+        height: 700px;
+    }
+}

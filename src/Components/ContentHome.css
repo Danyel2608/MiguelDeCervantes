@@ -1,0 +1,152 @@
+.content-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 1em;
+  max-width: 100vw;
+}
+.content-menu h3 {
+  text-transform: uppercase;
+  font-size: 2em;
+  text-decoration: underline #804000 3px;
+  text-underline-offset: 0.5em;
+  color: #6c3b2a;
+}
+.menu-cervantes {
+  width: 80%;
+  height: auto;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 2em;
+  margin: 1em;
+  border: 1px solid black;
+  border-radius: 2.5rem;
+  padding: 1em;
+  background-color: #804000;
+  color: white;
+}
+.tostas,
+.sándwiches,
+.bocadillos,
+.tostadas,
+.bollería,
+.pizzetas,
+.aperitivos,
+.hamburguesas,
+.platos-combinados,
+.bebidas-calientes,
+.bebidas-frias,
+.empanadas,
+.quesadillas {
+  text-align: start;
+  margin-bottom: 2em;
+}
+.promociones {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.tostas-precio,
+.bocadillos-precio,
+.hamburguesas-precio,
+.platos-combinados-precio,
+.menu-dia-precio,
+.plato-dia,
+.tostadas-precio,
+.pizzetas-precio {
+  display: flex;
+  justify-content: space-between;
+}
+.tostas li {
+  list-style: decimal;
+  padding-top: 1em;
+}
+.sándwiches li div,
+.tostadas li div,
+.bollería li div,
+.bebidas-calientes li div,
+.bebidas-frias li div,
+.aperitivos li div,
+.empanadas li div,
+.promociones li div,
+.quesadillas li div {
+  display: flex;
+  justify-content: space-between;
+}
+.sándwiches li,
+.bocadillos li,
+.tostadas li,
+.bollería li,
+.aperitivos li,
+.hamburguesas li,
+.platos-combinados li,
+.bebidas-calientes li,
+.bebidas-frias li,
+.empanadas li,
+.promociones li,
+.quesadillas li {
+  list-style: decimal;
+}
+.platos-combinados li {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.menu-diario,
+.info-menu-diario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu-dia-precio,
+.plato-dia,
+.racion-para-llevar {
+  display: flex;
+  flex-direction: column;
+}
+.menu-dia-precio div,
+.plato-dia div {
+  display: inline-flex;
+  justify-content: space-between;
+}
+.racion {
+  text-align: center;
+}
+.racion-para-llevar div {
+  display: flex;
+  justify-content: space-around;
+}
+.promo {
+  margin-top: 1em;
+  border: 1px solid black;
+  border-radius: 2.5rem;
+  padding: 1em;
+  background-color: #a18262;
+  color: #4b261a;
+  font-size: 0.5em;
+}
+.promo h3 {
+  text-decoration: none;
+}
+.title {
+  text-decoration: underline #4b261a 3px;
+  text-underline-offset: 0.5em;
+}
+
+@media only screen and (min-width: 640px) {
+  .menu-diario {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .promo {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .menu-cervantes {
+    font-size: 1.2em;
+  }
+}

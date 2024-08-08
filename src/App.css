@@ -1,0 +1,58 @@
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+html,
+body {
+  background-color: #d4b99d;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#root {
+  height: 100%;
+  width: 100vw;
+}
+
+.row{
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  background-color: black;
+  color: white;
+  padding: .5em;
+  opacity: .5;
+  cursor: pointer;
+}
+.cookie-banner {
+  position: fixed; /* Mantiene el banner en la misma posición mientras se desplaza la página */
+  bottom: 20px; /* Opcional: si prefieres que esté un poco arriba del borde inferior */
+  left: 50%; /* Centra el banner horizontalmente */
+  transform: translateX(-50%); /* Ajusta el banner para que quede exactamente centrado */
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente para que sea visible pero no intrusivo */
+  color: #fff; /* Color de texto blanco */
+  padding: 15px 30px; /* Añade espacio interno al banner */
+  border-radius: 8px; /* Bordes redondeados para un diseño más suave */
+  z-index: 1000; /* Asegura que el banner esté por encima de otros elementos */
+  text-align: center; /* Centra el texto dentro del banner */
+  width: 80%; /* Ocupa el 80% del ancho de la pantalla en dispositivos móviles */
+  max-width: 600px; /* Define un ancho máximo para pantallas más grandes */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Añade una sombra para darle más énfasis */
+}
+
+.cookie-banner button {
+  background-color: #4CAF50; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Sin bordes */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  margin-left: 10px; /* Espacio a la izquierda del botón */
+  border-radius: 5px; /* Bordes redondeados para el botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.cookie-banner button:hover {
+  background-color: #45a049; /* Color de fondo del botón al pasar el ratón */
+}
