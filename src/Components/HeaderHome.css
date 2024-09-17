@@ -1,18 +1,47 @@
+/* Estilos por defecto (mobile-first) */
 .header-content {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 200px;
-  width: 90%;
+  display: block;
+  text-align: center;
+  height: auto;
+  width: 100%;
 }
+
 .title-header {
   width: 100%;
   text-transform: uppercase;
-  text-align: center;
   color: #6c3b2a;
 }
+
 .header-content div img {
   object-fit: cover;
   max-height: 200px;
-  width: 100%;
+  width: 50%;
+}
+
+/* Tablets (pantallas medianas) */
+@media (min-width: 768px) {
+  .header-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 180px;
+    width: 90%;
+  }
+
+  .header-content div img {
+    max-height: 180px;
+    width: 90%;
+  }
+}
+
+/* Escritorio (pantallas grandes) */
+@media (min-width: 1024px) {
+  .header-content {
+    height: 200px;
+  }
+
+  .header-content div img {
+    max-height: 200px;
+    width: 100%;
+  }
 }

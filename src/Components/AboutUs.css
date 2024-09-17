@@ -1,11 +1,17 @@
+/* Estilos Mobile-First */
+
+/* Sección About Us */
 .about-us {
-  display: inline-block;
+  display: block;
   justify-content: center;
   align-items: center;
   background-color: #804000;
-  margin:0 5%;
+  margin: 5em 0;
   border-radius: 2.5rem;
+  overflow: hidden;
 }
+
+/* Sección derecha (imagen) */
 .about-us .rigth {
   width: 100%;
   height: auto;
@@ -13,6 +19,8 @@
   display: flex;
   align-items: center;
 }
+
+/* Imagen dentro de la sección derecha */
 .rigth img {
   width: 100%;
   height: 100%;
@@ -20,7 +28,9 @@
   border-bottom-left-radius: 2.5rem;
   border-bottom-right-radius: 2.5rem;
 }
-.left{
+
+/* Sección izquierda (texto) */
+.left {
   width: 100%;
   text-align: center;
   color: #fff;
@@ -29,26 +39,52 @@
   box-sizing: border-box;
   overflow-x: hidden; /* Previene que el contenido sobresalga horizontalmente */
 }
-.left h2{
-    text-decoration: underline #a18262;
-    text-underline-offset: .5em;
-    color: #fff;
-    margin-bottom: 1.5em;
+
+.left h2 {
+  text-decoration: underline #a18262;
+  text-underline-offset: 0.5em;
+  color: #fff;
+  margin-bottom: 1.5em;
 }
-@media only screen and (min-width: 768px) {
-  .about-us{
-    display: flex;
-  }
-  .about-us .rigth img{
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 2.5rem;
-    width: 100%;
-    height: auto;
-  }
+.left p {
+  text-align: start;
 }
-@media (min-width: 1024px) {
+/* Media Queries */
+
+/* Tablets (pantallas medianas) */
+@media (min-width: 640px) {
+  .about-us {
+    display: flex; /* Las secciones izquierda y derecha se alinean horizontalmente */
+    flex-direction: row; /* Imagen a la derecha y texto a la izquierda */
+    margin: 10% 5%; /* Ajusta los márgenes para pantallas más grandes */
+  }
+
+  .about-us .rigth {
+    width: 50%; /* La imagen ocupa el 50% del espacio */
+  }
+
+  .rigth img {
+    border-bottom-left-radius: 0px;
+  }
+
   .left {
-    font-size: 1.8em;
+    width: 50%; /* El texto también ocupa el 50% del espacio */
+    padding: 2em; /* Aumenta el padding en pantallas más grandes */
   }
 }
 
+/* Escritorio (pantallas grandes) */
+@media (min-width: 1024px) {
+  .about-us {
+    margin: 10% 15%; /* Ajuste de márgenes para pantallas grandes */
+  }
+
+  .rigth img {
+    height: auto; /* Asegura que la imagen mantenga su proporción correcta */
+  }
+
+  .left {
+    font-size: 1.2em; /* Aumenta ligeramente el tamaño del texto */
+    padding: 3em; /* Aumenta el padding en pantallas grandes */
+  }
+}

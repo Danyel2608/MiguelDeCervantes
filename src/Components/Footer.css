@@ -1,57 +1,110 @@
+/* Estilos Mobile-First */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Incluye padding y border en el ancho y alto total del elemento */
+  margin: 0;
+  padding: 0;
+}
+
+/* Footer general */
 .footer-page {
-  width: 100%;
-  height: auto;
-  background-color: #a18262;
+  width: 100%; /* Asegura que el footer ocupe todo el ancho del contenedor */
+  background-color: #a18262; /* Color de fondo del footer */
   display: flex;
+  flex-direction: column; /* Organiza los elementos en columnas para móviles */
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #804000;
-  border-top-left-radius: 2.5rem;
+  color: #804000; /* Color del texto del footer */
+  border-top-left-radius: 2.5rem; /* Bordes redondeados superiores */
   border-top-right-radius: 2.5rem;
+  padding-top: 1em; /* Espacio interno para evitar que el contenido toque los bordes */
+  margin-top: 5em; 
+  overflow: hidden; /* Previene que el contenido se desborde fuera del contenedor */
 }
+.footer-page h2{
+  text-decoration: underline ;
+  text-underline-offset: .3em;
+  text-decoration-color: #804000;
+  margin-bottom: 1em;
+}
+/* Sección de contactos */
 .contact {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Asegura que la sección de contactos ocupe todo el ancho del contenedor */
+  background-color: #a18262; /* Color de fondo para la sección de contactos */
+  padding: 1em; /* Espacio interno para evitar que el contenido toque los bordes */
+  color: #804000; /* Color del texto en la sección de contactos */
 }
+
+/* Contenedor de los contactos */
 .contacts {
-  width: 100%;
-  height: auto;
-  font-size: 80%;
+  width: 100%; /* Asegura que el contenedor de contactos ocupe todo el ancho del contenedor */
+  font-size: 80%; /* Tamaño de fuente ajustado para móviles */
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Organizado verticalmente para móviles */
   justify-content: space-around;
+  margin-bottom: 1em; /* Espacio adicional en la parte inferior */
 }
+
+/* Contactos en columnas */
 .left-contact,
 .right-contact {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0.5em 0; /* Espaciado entre los elementos */
 }
+
+/* Iconos en las secciones de contacto */
 .left-contact i,
 .right-contact i {
-  margin-right: 1em;
+  margin-right: 1em; /* Espaciado entre el icono y el texto */
 }
+
+/* Información del desarrollador */
 .info-developer {
-  background-color: #804000;
-  color: #a18262;
-  padding-bottom: 0.5em;
-  padding-top: 0.5em;
+  background-color: #804000; /* Color de fondo del footer */
+  color: #a18262; /* Color del texto en el footer */
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%; /* Asegura que el elemento ocupe todo el ancho del contenedor */
+  padding-top: 1em; /* Espacio interno en la parte superior */
+  padding-bottom: 1em; /* Espacio interno en la parte inferior */
+  position: relative; /* Mantiene el footer en el flujo normal del documento */
+  margin-top: auto; /* Empuja el footer hacia el final del contenedor principal */
 }
-@media (min-width: 768px) {
-  .contacts {
-    flex-direction: row;
+
+/* Puntos de interrupción (media queries) */
+
+/* Pantallas pequeñas (móviles) */
+@media (min-width: 480px) {
+  .contact {
+    font-size: 90%; /* Ajusta el tamaño de fuente en pantallas un poco más grandes */
   }
 }
-@media only screen and (min-width: 1024px) {
+
+/* Pantallas medianas (tablets) */
+@media (min-width: 768px) {
   .contacts {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 2em;
-    font-size: 1.1em;
+    flex-direction: row; /* Cambia a una disposición en fila para pantallas más grandes */
+    justify-content: space-between; /* Espacio distribuido entre los elementos */
+  }
+
+  .left-contact,
+  .right-contact {
+    margin: 1em; /* Aumenta el espaciado en pantallas medianas */
+  }
+}
+
+/* Pantallas grandes (escritorios) */
+@media (min-width: 1024px) {
+  .footer-page {
+    padding-top: 2em; /* Aumenta el padding en pantallas grandes para mejorar la apariencia */
+  }
+
+  .contacts {
+    font-size: 100%; /* Ajusta el tamaño de fuente en pantallas grandes */
   }
 }

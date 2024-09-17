@@ -15,9 +15,9 @@ function Footer() {
                         <h3>cafeteriamiguelcervantes@gmail.com</h3>
                     </div>
                 </div>
-                <div className="info-developer">
-                    <p>Web creada y diseñada por <strong>DVIVANCOS</strong></p>
-                </div>
+            </div>
+            <div className="info-developer">
+                <p>Web creada y diseñada por <strong>DVIVANCOS</strong></p>
             </div>
         </div>
     );
