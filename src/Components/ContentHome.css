@@ -7,7 +7,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 1em;
   width: 100%;
   margin: 3em 0;
 }
@@ -15,9 +14,9 @@
 .content-menu h3 {
   text-transform: uppercase;
   font-size: 2em;
-  text-decoration: underline #804000 3px;
   text-underline-offset: 0.5em;
-  color: #6c3b2a;
+  color: white;
+  border-bottom: 5px solid #a18262;
 }
 
 /* Menú principal */
@@ -26,11 +25,12 @@
   height: auto;
   justify-content: space-between;
   align-items: stretch;
-  margin: 3em 0;
+  margin: 5em 0;
   border: 1px solid black;
   border-radius: 2.5rem;
   padding: 3em;
-  background-color: #804000;
+  background-color: black;
+  opacity: 0.7;
   color: white;
 }
 
@@ -50,7 +50,7 @@
 .quesadillas,
 .ensaladas {
   text-align: start;
-  margin-bottom: 2em;
+  margin-bottom: 2.5em;
 }
 
 /* Promociones */
@@ -74,9 +74,9 @@
 }
 
 /* Estilos de lista */
-.tostas li {
+li {
   list-style: decimal;
-  padding-top: 2em;
+  margin: 2em 0; /* Define el mismo margen para todos los li */
 }
 
 /* Listas con elementos flex */
@@ -91,28 +91,6 @@
 .quesadillas li div {
   display: flex;
   justify-content: space-between;
-}
-
-/* Listas con decimal */
-.sándwiches li,
-.bocadillos li,
-.tostadas li,
-.bollería li,
-.aperitivos li,
-.hamburguesas li,
-.platos-combinados li,
-.bebidas-calientes li,
-.bebidas-frias li,
-.empanadas li,
-.promociones li,
-.quesadillas li,
-.ensaladas li {
-  list-style: decimal;
-  margin: 2em 0;
-}
-
-.platos-combinados li {
-  margin: 2em 0;
 }
 
 /* Estilos del menú diario */
@@ -166,11 +144,13 @@
 
 /* Estilos del título */
 .title {
-  text-decoration: underline #4b261a 3px;
-  text-underline-offset: 0.5em;
+  border-bottom : solid #a18262 2px;
   text-transform: uppercase;
+  width: 100%;
 }
-
+.bocadillos-calientes-info p {
+  margin: 2em 0;
+}
 /* Media Queries */
 
 /* Tablets (pantallas medianas) */

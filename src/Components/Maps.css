@@ -7,11 +7,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #804000;
+    background-color: black;
+    opacity: .8;
     border-radius: 2.5rem;
     padding: 2em;
   }
-  
+
   /* Título del mapa */
   .maps h2 {
     text-transform: uppercase;
@@ -20,38 +21,38 @@
     text-underline-offset: .5em;
     text-decoration-color: #a18262;
   }
-  
+
   /* Estilo del iframe */
   .maps iframe {
     border-radius: 2.5rem;
     margin: 1em 0;
     width: 100%;
     height: 300px; /* Altura predeterminada para móviles */
+    opacity: 1;
   }
-  
+
   /* Media Queries */
-  
+
   /* Tablets (pantallas medianas) */
   @media (min-width: 640px) {
     .maps {
       margin: 10% 5%; /* Reduce los márgenes en pantallas medianas */
       padding: 2.5em; /* Aumenta el padding para mayor espacio */
     }
-  
+
     .maps iframe {
       height: 400px; /* Aumenta la altura del iframe en pantallas medianas */
     }
   }
-  
+
   /* Escritorio (pantallas grandes) */
   @media (min-width: 1024px) {
     .maps {
       margin: 10% 15%; /* Aumenta los márgenes laterales en pantallas grandes */
       padding: 3em; /* Aumenta el padding para pantallas grandes */
     }
-  
+
     .maps iframe {
       height: 800px; /* Aumenta la altura del iframe en pantallas grandes */
     }
   }
-  

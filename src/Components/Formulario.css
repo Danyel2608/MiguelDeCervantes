@@ -26,7 +26,7 @@
 /* Imagen dentro del formulario (lado izquierdo) */
 .left-form img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   border-top-left-radius: 2em;
   border-top-right-radius: 2em;
@@ -38,7 +38,8 @@
   padding: 1em;
   border-bottom-left-radius: 2em;
   border-bottom-right-radius: 2em;
-  background-color: #804000;
+  background-color: black;
+  opacity: 0.7;
 }
 
 .rigth-form h3 {
@@ -86,9 +87,11 @@
 
 /* Tablets (pantallas medianas) */
 @media (min-width: 640px) {
-  .form{
+  .form {
+    display: flex; /* Aplica Flexbox para alinear los elementos */
     flex-wrap: nowrap;
     margin: 0 5%;
+    align-items: stretch; /* Asegura que las columnas tengan la misma altura */
   }
   .left-form,
   .rigth-form {
@@ -96,16 +99,18 @@
   }
 
   .left-form img {
-    height: 674px;
+    height: 100%; /* Asegura que la imagen llene toda la altura de la columna */
     border-radius: 2em 0 0 2em; /* Ajuste de los bordes en tabletas */
+    object-fit: cover; /* Asegura que la imagen se ajuste correctamente sin deformarse */
   }
 
   .rigth-form {
+    height: auto; /* Deja que la altura de esta columna se ajuste automáticamente */
     border-radius: 0 2em 2em 0; /* Ajuste de los bordes en tabletas */
   }
 
   .rigth-form form input {
-    width: 80%; /* Reduce el ancho del input en tabletas */
+    width: 90%; /* Reduce el ancho del input en tabletas */
   }
 }
 
@@ -114,6 +119,7 @@
   .form {
     max-width: 1200px; /* Limita el ancho total del formulario en pantallas grandes */
     margin: auto; /* Centra el formulario en la pantalla */
+    align-items: stretch; /* Asegura que las columnas tengan la misma altura */
   }
 
   .left-form,
@@ -121,10 +127,13 @@
     width: 50%; /* Columnas ocupan 50% del espacio en pantallas grandes */
   }
 
+  .left-form img {
+    height: 100%; /* Asegura que la imagen llene toda la altura de la columna */
+    object-fit: cover; /* Asegura que la imagen se ajuste correctamente sin deformarse */
+  }
+
   .rigth-form form input {
     width: 70%; /* Reduce el ancho del input en pantallas grandes */
   }
-  .left-form img{
-    height: 734px;
-  }
 }
+

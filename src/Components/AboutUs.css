@@ -5,7 +5,6 @@
   display: block;
   justify-content: center;
   align-items: center;
-  background-color: #804000;
   margin: 5em 0;
   border-radius: 2.5rem;
   overflow: hidden;
@@ -38,6 +37,8 @@
   font-size: 1em;
   box-sizing: border-box;
   overflow-x: hidden; /* Previene que el contenido sobresalga horizontalmente */
+  background-color: black;
+  opacity: 0.7;
 }
 
 .left h2 {
@@ -47,8 +48,9 @@
   margin-bottom: 1.5em;
 }
 .left p {
-  text-align: start;
+  text-align: center;
 }
+
 /* Media Queries */
 
 /* Tablets (pantallas medianas) */
@@ -57,6 +59,7 @@
     display: flex; /* Las secciones izquierda y derecha se alinean horizontalmente */
     flex-direction: row; /* Imagen a la derecha y texto a la izquierda */
     margin: 10% 5%; /* Ajusta los márgenes para pantallas más grandes */
+    align-items: stretch; /* Asegura que ambas secciones tengan la misma altura */
   }
 
   .about-us .rigth {
@@ -65,9 +68,15 @@
 
   .rigth img {
     border-bottom-left-radius: 0px;
+    height: 100%; /* Asegura que la imagen llene el contenedor */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
   }
 
   .left {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
     width: 50%; /* El texto también ocupa el 50% del espacio */
     padding: 2em; /* Aumenta el padding en pantallas más grandes */
   }
@@ -80,7 +89,7 @@
   }
 
   .rigth img {
-    height: auto; /* Asegura que la imagen mantenga su proporción correcta */
+    height: 100%; /* Asegura que la imagen mantenga su proporción correcta */
   }
 
   .left {

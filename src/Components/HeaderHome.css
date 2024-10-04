@@ -4,12 +4,13 @@
   text-align: center;
   height: auto;
   width: 100%;
+  padding: 2em;
 }
 
 .title-header {
   width: 100%;
   text-transform: uppercase;
-  color: #6c3b2a;
+  color: white;
 }
 
 .header-content div img {
