@@ -100,21 +100,23 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
-.menu-dia-precio,
-.plato-dia,
+div.menu-dia-precio,
+div.plato-dia,
 .racion-para-llevar {
   display: flex;
-  flex-direction: column;
-  margin: 2em 0;
-}
-
-.menu-dia-precio div,
-.plato-dia div {
-  display: inline-flex;
+  flex-direction: row;
   justify-content: space-between;
-  margin: 1em 0;
+  width: 100%;
+  height: auto;
+  margin: 2em 0;
+  align-items: center;
+}
+.plato-dia-content {
+  width: 100%;
+  margin-bottom: 5em;
 }
 
 /* Estilos de las raciones */
@@ -125,31 +127,29 @@ li {
 .racion-para-llevar div {
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
 /* Estilos para promociones */
 .promo {
-  margin-top: 1em;
+  margin: 3em 1em;
   border: 1px solid black;
   border-radius: 2.5rem;
-  padding: 1em;
+  padding: 3em 1em;
   background-color: #a18262;
-  color: #4b261a;
-  font-size: 0.5em;
-}
-
-.promo h3 {
-  text-decoration: none;
+  font-size: .7em;
 }
 
 /* Estilos del título */
 .title {
-  border-bottom : solid #a18262 2px;
+  border-bottom: solid #a18262 2px;
   text-transform: uppercase;
   width: 100%;
 }
-.bocadillos-calientes-info p {
+.promo-title {
   margin: 2em 0;
+  color: #553d2a;
+  font-size: 2em;
 }
 /* Media Queries */
 
@@ -195,7 +195,7 @@ li {
 
   /* Ajuste de flex para distribuciones horizontales */
   .menu-diario {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
 }

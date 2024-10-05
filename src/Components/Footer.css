@@ -76,7 +76,11 @@
   position: relative; /* Mantiene el footer en el flujo normal del documento */
   margin-top: auto; /* Empuja el footer hacia el final del contenedor principal */
 }
-
+.info-developer a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
 /* Puntos de interrupción (media queries) */
 
 /* Pantallas pequeñas (móviles) */

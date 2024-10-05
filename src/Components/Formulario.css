@@ -44,6 +44,8 @@
 
 .rigth-form h3 {
   text-transform: uppercase;
+  margin-top: 1em;
+  border-bottom: 5px solid #311903;
 }
 
 .rigth-form p {

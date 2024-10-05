@@ -17,7 +17,7 @@ function Footer() {
                 </div>
             </div>
             <div className="info-developer">
-                <p>Web creada y diseñada por <strong>DVIVANCOS</strong></p>
+                <p>Web creada y diseñada por <strong><a href="https://www.linkedin.com/in/daniel-salcedo-vivancos-87855918b/">VIVANCOS</a></strong></p>
             </div>
         </div>
     );

@@ -49,13 +49,10 @@ function ContentHome() {
                             <h4 className='title'>Bocadillos Calientes</h4>
                             <h4>2,50€</h4>
                         </div>
-                        <div className="bocadillos-calientes-info">
-                            <p>*Se le pone un poquito de aove de Jaén</p>
-                        </div>
                         <ul>
                             <li><div>
                                 <p><strong>Federico García Lorca</strong></p>
-                                <p>Bocadillo de lomo con queso*</p>
+                                <p>Bocadillo de lomo con queso</p>
                             </div></li>
                             <li><div>
                                 <p><strong>Gustavo Adolfo Bécquer</strong></p>
@@ -63,11 +60,11 @@ function ContentHome() {
                             </div></li>
                             <li><div>
                                 <p><strong>Lope de Vega</strong></p>
-                                <p>Bocadillo de lomo,queso y tomate*</p>
+                                <p>Bocadillo de lomo,queso y tomate</p>
                             </div></li>
                             <li><div>
                                 <p><strong>Federico de Quevedo</strong></p>
-                                <p>Bocadillo de pechuga de pollo con tomate y queso*</p>
+                                <p>Bocadillo de pechuga de pollo con tomate y queso</p>
                             </div></li>
                             <li><div>
                                 <p><strong>Sancho Panza</strong></p>
@@ -75,7 +72,7 @@ function ContentHome() {
                             </div></li>
                             <li><div>
                                 <p><strong>Antonio Machado</strong></p>
-                                <p>Bocadillo de tortilla de patatas*</p>
+                                <p>Bocadillo de tortilla de patatas</p>
                             </div></li>
                             <li><div>
                                 <p><strong>Miguel de Cervantes</strong></p>
@@ -229,13 +226,8 @@ function ContentHome() {
                             </div>
                             </li>
                             <li><div>
-                                <p>Café bombón</p>
-                                <p><strong> 1,40€</strong></p>
-                            </div>
-                            </li>
-                            <li><div>
                                 <p>Café americano</p>
-                                <p><strong> 1,20</strong></p>
+                                <p><strong>1,20€</strong></p>
                             </div>
                             </li>
                             <li><div>
@@ -305,23 +297,25 @@ function ContentHome() {
                             <li>
                                 <div>
                                     <p>Refresco + pincho de tortilla</p>
-                                    <p><strong>2,20€</strong></p>
+                                    <p><strong>2,40€</strong></p>
                                 </div>
                             </li>
                         </ul>
                     </div>
                     <div className="menu-diario">
-                        <div className="menu-dia-precio"><div>
+                        <div className="menu-dia-precio">
                             <h4 className='title'>Menú del día</h4>
                             <h4>8€</h4>
                         </div>
-                            <p>Incluye pan,una botella de agua,postre o café</p></div>
-                        <div className="plato-dia">
-                            <div>
+                        <div>
+                            <p>Incluye pan,una botella de agua,postre o café</p>
+                        </div>
+                        <div className="plato-dia-content">
+                            <div className="plato-dia">
                                 <h4 className='title'>Plato del día</h4>
                                 <h4>5€</h4>
                             </div>
-                            <p>Incluye pan,una botella de agua,postre o café</p>
+                            <p>Incluye pan</p>
                         </div>
                     </div>
                     <div className="info-menu-diario">
@@ -336,8 +330,8 @@ function ContentHome() {
                         </div>
                     </div>
                     <div className="promo">
-                        <h3>¡PROMO DESAYUNOS!</h3>
-                        <h3>COMBINA TU CAFÉ CON TOSTADA O BOLLERÍA POR 2,20€</h3>
+                        <h2 className="promo-title">¡PROMO DESAYUNOS!</h2>
+                        <h2>COMBINA TU CAFÉ CON TOSTADA O BOLLERÍA POR 2,20€</h2>
                     </div>
                 </div>
             </div>
