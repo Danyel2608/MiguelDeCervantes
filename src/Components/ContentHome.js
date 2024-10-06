@@ -87,7 +87,7 @@ function ContentHome() {
                         </div>
                         <ul>
                             <li><div>
-                                <p>Tostada de tomate con aove de Jaén</p>
+                                <p>Tostada de tomate con AOVE de Jaén</p>
                             </div></li>
                             <li><div>
                                 <p>Tostada de mantequilla y mermelada</p>
@@ -108,7 +108,7 @@ function ContentHome() {
                                 <p><strong>1,20€</strong></p>
                             </div></li>
                             <li><div>
-                                <p>Kit-kat y variados</p>
+                                <p>Kit kat y variados</p>
                                 <p><strong>1,00€</strong></p>
                             </div></li>
                         </ul>
