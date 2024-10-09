@@ -1,4 +1,4 @@
-* {
+*{
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -17,22 +17,29 @@ body {
   width: 100vw;
 }
 
-.row{
+.row {
   position: absolute;
   right: 25px;
   bottom: 25px;
   background-color: black;
   color: white;
-  padding: .5em;
-  opacity: .5;
+  padding: 0.5em;
+  opacity: 0.5;
   cursor: pointer;
 }
 .cookie-banner {
   position: fixed; /* Mantiene el banner en la misma posición mientras se desplaza la página */
   bottom: 20px; /* Opcional: si prefieres que esté un poco arriba del borde inferior */
   left: 50%; /* Centra el banner horizontalmente */
-  transform: translateX(-50%); /* Ajusta el banner para que quede exactamente centrado */
-  background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente para que sea visible pero no intrusivo */
+  transform: translateX(
+    -50%
+  ); /* Ajusta el banner para que quede exactamente centrado */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Fondo semi-transparente para que sea visible pero no intrusivo */
   color: #fff; /* Color de texto blanco */
   padding: 15px 30px; /* Añade espacio interno al banner */
   border-radius: 8px; /* Bordes redondeados para un diseño más suave */
@@ -44,7 +51,7 @@ body {
 }
 
 .cookie-banner button {
-  background-color: #4CAF50; /* Color de fondo del botón */
+  background-color: #4caf50; /* Color de fondo del botón */
   color: white; /* Color del texto del botón */
   border: none; /* Sin bordes */
   padding: 10px 20px; /* Espaciado interno del botón */
